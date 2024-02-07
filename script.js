@@ -10,7 +10,7 @@ L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
   // load GeoJSON from an external file
-$.getJSON("https://drive.google.com/file/d/1n8IPHFn1QwlE1bsY-8VhJIzn8VYoyvk5/view?usp=drive_link", function (data) {
+$.getJSON("https://raw.githubusercontent.com/em-henken/gis4091_project1_leaflet/main/Public_Schools_Points_2011-2012A.json", function (data) {
   console.log(data)
 
   L.geoJson(data, {
